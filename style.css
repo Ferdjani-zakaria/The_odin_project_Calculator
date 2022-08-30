@@ -1,0 +1,85 @@
+:root{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: wheat;
+}
+
+.container{
+    width: min(80%, 32rem);
+    margin-inline: auto;
+    margin-top: 1rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.screen{
+    width: 100%;
+    display: flex;
+}
+
+.calcScreen{
+    border: 1px solid blue ;
+    border-radius: 0.2rem;
+    padding-block: 0rem;
+    text-align: right;
+    width: 100%;
+    font-size: 2.5rem;
+    padding-inline: 0.3rem;
+    font-family: 'Changa', sans-serif;
+}
+
+.digitContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 0.2rem;
+    flex-grow: 1;
+}
+
+.btnContainer{
+    display: flex;
+    gap: 0.8rem;
+    min-height: 25rem;
+}
+
+.operatorContainer{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: hsl(197, 71%, 88%);
+    border-radius: 0.2rem;
+    border: none;
+    box-shadow: -1px 1px 1px hsl(197, 71%, 53%);
+    font-size: 1.8rem;
+    font-weight:600;
+    min-width: 1.6rem;
+    cursor: pointer;
+    font-family: 'Changa', sans-serif;
+}
+
+.btn:active{
+background-color: hsl(197, 71%, 80%);
+box-shadow:inset 1px 1px hsl(197, 71%, 53%);
+}
+
+button#clear{
+    color: hsl(10, 100%, 50%);
+    font-size: 1.3rem;
+}
+
+button#equal{
+    flex-grow: 1;
+}
